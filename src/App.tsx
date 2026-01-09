@@ -20,11 +20,11 @@ function App() {
       <AuroraBackground />
 
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-4">
+      <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-4 bg-zinc-950/80 backdrop-blur-md border-b border-white/5">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="glass-panel px-4 py-2 rounded-full flex items-center gap-2 bg-zinc-950/50 backdrop-blur-md border border-white/10">
-            <div className="w-6 h-6 bg-gradient-to-tr from-blue-500 to-purple-500 rounded-full"></div>
-            <span className="font-bold tracking-tight">KinKeep</span>
+          <div className="flex items-center gap-2">
+            <div className="w-8 h-8 bg-gradient-to-tr from-blue-500 to-purple-500 rounded-full flex items-center justify-center font-bold text-lg shadow-lg">K</div>
+            <span className="font-bold tracking-tight text-xl">KinKeep</span>
           </div>
           <a href="https://kinkeep.netlify.app/" target="_blank" rel="noopener noreferrer">
             <Button variant="secondary" className="!py-2 !px-4 text-sm rounded-full">
@@ -46,7 +46,7 @@ function App() {
             <div className="inline-block mb-6 px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-medium">
               Private Beta Now Open
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 bg-clip-text text-transparent bg-gradient-to-b from-white to-white/60">
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight mb-8 bg-clip-text text-transparent bg-gradient-to-b from-white to-white/60">
               When was the last time you thought, <span className="text-blue-400">"I really need to call them,"</span> but never did?
             </h1>
             <p className="text-xl text-zinc-400 mb-10 max-w-2xl mx-auto leading-relaxed">
@@ -92,9 +92,9 @@ function App() {
             <p className="text-zinc-400 text-lg">The KinKeep Dashboard answers one specific question: <strong className="text-white">Who do I need to connect with today?</strong></p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-3 gap-6 h-auto md:h-[600px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:grid-rows-3 gap-6 h-auto lg:h-[600px]">
             {/* Feature 1: Focus Contact (Top Left Big Block - 2x2) */}
-            <Card className="col-span-1 md:col-span-2 md:row-span-2 flex flex-col justify-between relative overflow-hidden group">
+            <Card className="col-span-1 md:col-span-2 lg:col-span-2 lg:row-span-2 flex flex-col justify-between relative overflow-hidden group">
               <div className="absolute top-0 right-0 p-4 opacity-50"><span className="text-xs font-mono uppercase tracking-widest text-blue-400">Priority</span></div>
               <div>
                 <div className="w-16 h-16 rounded-full bg-zinc-800 flex items-center justify-center mb-4 text-2xl border border-white/10">👨‍👩‍👧</div>
@@ -133,7 +133,7 @@ function App() {
             </Card>
 
             {/* Feature 4: Upcoming Schedule (Bottom Wide Block) */}
-            <Card className="col-span-1 md:col-span-4 flex flex-col md:flex-row items-center justify-between gap-6">
+            <Card className="col-span-1 md:col-span-2 lg:col-span-4 flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="flex-1">
                 <h3 className="text-lg font-semibold mb-2">Upcoming Schedule</h3>
                 <div className="flex gap-4 overflow-x-auto pb-2">
@@ -201,7 +201,7 @@ function App() {
                   <h4 className="font-medium text-sm text-zinc-400 mb-2">Preferred Day</h4>
                   <div className="grid grid-cols-4 gap-2">
                     {['S', 'M', 'T', 'W', 'T', 'F', 'S'].map((d, i) => (
-                      <div key={i} className={`h-8 rounded flex items-center justify-center text-xs ${i === 0 ? 'bg-blue-500/20 text-blue-400 border border-blue-500/30' : 'bg-zinc-900 text-zinc-600'}`}>
+                      <div key={i} className={`h-10 rounded flex items-center justify-center text-xs ${i === 0 ? 'bg-blue-500/20 text-blue-400 border border-blue-500/30' : 'bg-zinc-900 text-zinc-600'}`}>
                         {d}
                       </div>
                     ))}
@@ -215,7 +215,7 @@ function App() {
         {/* Section 5: Sorting Hat (Onboarding) */}
         <section className="max-w-4xl mx-auto mb-32 text-center">
           <Card className="bg-gradient-to-br from-zinc-900 to-zinc-950 border-zinc-800">
-            <h2 className="text-3xl font-bold mb-4">Organize your entire network in minutes, not hours.</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-4 px-2">Organize your entire network in minutes, not hours.</h2>
             <p className="text-zinc-400 mb-8 max-w-2xl mx-auto">
               Dreading the setup? Don't. Our <strong>Import Wizard</strong> ingests your existing CSV or VCF files and helps you rapidly assign frequencies to bulk groups. Turn a list of 500 undefined contacts into a prioritized maintenance schedule in just a few clicks.
             </p>
