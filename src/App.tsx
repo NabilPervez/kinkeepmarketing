@@ -1,6 +1,7 @@
 // import React from 'react';
 import { Card } from './components/Card';
 import { Button } from './components/Button';
+import { AuroraBackground } from './components/AuroraBackground';
 import {
   Shield,
   Download,
@@ -16,6 +17,7 @@ import { motion } from 'framer-motion';
 function App() {
   return (
     <div className="min-h-screen text-zinc-100 selection:bg-blue-500/30">
+      <AuroraBackground />
 
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-4">
