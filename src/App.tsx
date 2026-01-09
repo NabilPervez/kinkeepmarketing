@@ -26,9 +26,11 @@ function App() {
             <div className="w-6 h-6 bg-gradient-to-tr from-blue-500 to-purple-500 rounded-full"></div>
             <span className="font-bold tracking-tight">KinKeep</span>
           </div>
-          <Button variant="secondary" className="!py-2 !px-4 text-sm rounded-full">
-            Beta Access
-          </Button>
+          <a href="https://kinkeep.netlify.app/" target="_blank" rel="noopener noreferrer">
+            <Button variant="secondary" className="!py-2 !px-4 text-sm rounded-full">
+              Beta Access
+            </Button>
+          </a>
         </div>
       </nav>
 
@@ -51,9 +53,11 @@ function App() {
               Stop letting meaningful connections slip through the cracks. KinKeep is the privacy-focused Personal Relationship Manager that turns your static address book into an active maintenance plan.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Button className="w-full sm:w-auto text-lg px-8 py-4">
-                Start Keeping in Touch — Free <ArrowRight className="w-5 h-5" />
-              </Button>
+              <a href="https://kinkeep.netlify.app/" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full sm:w-auto text-lg px-8 py-4">
+                  Start Keeping in Touch — Free <ArrowRight className="w-5 h-5" />
+                </Button>
+              </a>
             </div>
             <p className="mt-4 text-sm text-zinc-500">No account required. Data stays on your device.</p>
           </motion.div>
@@ -287,9 +291,11 @@ function App() {
         <section className="text-center py-20 border-t border-white/5">
           <h2 className="text-4xl font-bold mb-4">Be the friend who remembers.</h2>
           <p className="text-zinc-400 mb-10">Build better habits and strengthen your community today.</p>
-          <Button className="mx-auto text-lg px-12 py-4 shadow-[0_0_40px_rgba(37,99,235,0.4)] hover:shadow-[0_0_60px_rgba(37,99,235,0.6)]">
-            Launch KinKeep Now
-          </Button>
+          <a href="https://kinkeep.netlify.app/" target="_blank" rel="noopener noreferrer">
+            <Button className="mx-auto text-lg px-12 py-4 shadow-[0_0_40px_rgba(37,99,235,0.4)] hover:shadow-[0_0_60px_rgba(37,99,235,0.6)]">
+              Launch KinKeep Now
+            </Button>
+          </a>
           <div className="mt-12 text-zinc-600 text-sm">
             © {new Date().getFullYear()} KinKeep. All rights reserved. Locally Hosted.
           </div>
