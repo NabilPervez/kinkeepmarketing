@@ -16,12 +16,12 @@ export const Card: React.FC<CardProps> = ({ children, className = '', delay = 0 
             transition={{ duration: 0.5, delay }}
             className={`
         bg-white/5 
-        backdrop-blur-xl 
-        border border-white/10 
+        backdrop-blur-md 
+        border border-white/5 
         shadow-lg 
-        rounded-2xl 
+        rounded-3xl 
         p-6 
-        hover:bg-white/10 
+        hover:scale-[1.02] 
         transition-all 
         duration-300 
         ${className}
