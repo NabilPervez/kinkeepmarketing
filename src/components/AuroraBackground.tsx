@@ -4,7 +4,8 @@ import { motion } from 'framer-motion';
 export const AuroraBackground: React.FC = () => {
     return (
         <div className="fixed inset-0 z-[-1] overflow-hidden pointer-events-none">
-            <div className="absolute inset-0 bg-zinc-950/90 backdrop-blur-[100px] z-10"></div>
+            {/* Removed dark overlay since we want the porcelain body background to show through, or use a light overlay */}
+            <div className="absolute inset-0 bg-porcelain/50 backdrop-blur-[100px] z-10"></div>
 
             {/* Steel Blue Blob - Top Left */}
             <motion.div
@@ -19,7 +20,7 @@ export const AuroraBackground: React.FC = () => {
                     repeat: Infinity,
                     ease: "easeInOut",
                 }}
-                className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-[#4f7cac] rounded-full blur-[120px] opacity-30 mix-blend-screen"
+                className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-tropical-teal rounded-full blur-[120px] opacity-20 mix-blend-multiply"
             />
 
             {/* Frozen Water / Cyan Blob - Bottom Right */}
@@ -34,7 +35,7 @@ export const AuroraBackground: React.FC = () => {
                     repeat: Infinity,
                     ease: "easeInOut",
                 }}
-                className="absolute bottom-[-10%] right-[-10%] w-[600px] h-[600px] bg-[#c0e0de] rounded-full blur-[140px] opacity-20 mix-blend-screen"
+                className="absolute bottom-[-10%] right-[-10%] w-[600px] h-[600px] bg-pearl-aqua rounded-full blur-[140px] opacity-30 mix-blend-multiply"
             />
 
             {/* Soft Cyan Blob - Center/Right drifting */}
@@ -48,7 +49,7 @@ export const AuroraBackground: React.FC = () => {
                     repeat: Infinity,
                     ease: "easeInOut",
                 }}
-                className="absolute top-[20%] right-[10%] w-[400px] h-[400px] bg-[#9eefe5] rounded-full blur-[100px] opacity-20 mix-blend-screen"
+                className="absolute top-[20%] right-[10%] w-[400px] h-[400px] bg-tropical-teal rounded-full blur-[100px] opacity-20 mix-blend-multiply"
             />
 
             {/* Primary/Red Accent - Center/Left drifting (Subtle warmth) */}
@@ -62,7 +63,7 @@ export const AuroraBackground: React.FC = () => {
                     repeat: Infinity,
                     ease: "easeInOut",
                 }}
-                className="absolute bottom-[30%] left-[10%] w-[450px] h-[450px] bg-red-400/30 rounded-full blur-[110px] opacity-10 mix-blend-screen"
+                className="absolute bottom-[30%] left-[10%] w-[450px] h-[450px] bg-pearl-aqua/50 rounded-full blur-[110px] opacity-20 mix-blend-multiply"
             />
         </div>
     );
