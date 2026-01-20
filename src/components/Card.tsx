@@ -15,9 +15,9 @@ export const Card: React.FC<CardProps> = ({ children, className = '', delay = 0 
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay }}
             className={`
-        bg-white/5 
+        bg-white/60 
         backdrop-blur-md 
-        border border-white/5 
+        border border-stormy-teal/5 
         shadow-lg 
         rounded-3xl 
         p-6 

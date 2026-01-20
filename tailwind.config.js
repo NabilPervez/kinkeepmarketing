@@ -11,9 +11,14 @@ export default {
                 display: ['Outfit', 'Inter', 'sans-serif'],
             },
             colors: {
+                porcelain: '#fffffaff',
+                'stormy-teal': '#0d5c63', // Removed 'ff' suffix as Tailwind handles opacity better without it usually, but kept consistent if requested. Sticking to hex provided.
+                'tropical-teal': '#44a1a0',
+                'pearl-aqua': '#78cdd7',
+                teal: '#247b7b',
                 background: {
-                    light: '#f8fafc', // slate-50
-                    dark: '#1E2130', // Deep Navy/Charcoal
+                    light: '#fffffaff', // porcelain
+                    dark: '#1E2130',
                 },
                 brand: {
                     steel: '#4f7cac',
@@ -21,7 +26,7 @@ export default {
                     jet: '#162521',
                     iron: '#3c474b',
                     cyan: '#9eefe5',
-                    primary: '#ef4444', // Red-500 equivalent for "Coral/Red"
+                    primary: '#ef4444',
                 }
             },
             keyframes: {
