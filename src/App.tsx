@@ -174,9 +174,9 @@ function App() {
               </p>
               <ul className="space-y-4">
                 {[
-                  { title: "The Inner Circle", desc: "Set your spouse or parents to Daily or Every 3 Days." },
-                  { title: "The Keep-In-Touch", desc: "Set old friends to Monthly or Quarterly." },
-                  { title: "The Network", desc: "Set professional acquaintances to Yearly." },
+                  { title: "The Inner Circle", desc: "Stay consistently present in the lives of those closest to you." },
+                  { title: "The Keep-In-Touch", desc: "Bridge the gap with friends you don't see often but care about deeply." },
+                  { title: "The Network", desc: "Keep professional relationships warm without over-committing your time." },
                   { title: "Batch Your Time", desc: "Assign 'Preferred Days' to specific contacts. Call family on Sundays." }
                 ].map((item, i) => (
                   <li key={i} className="flex gap-4">
