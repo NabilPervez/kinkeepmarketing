@@ -18,21 +18,21 @@ export function Donate() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
             >
-                <div className="inline-flex items-center justify-center p-3 bg-pearl-aqua/20 rounded-full mb-6">
-                    <Heart className="w-8 h-8 text-tropical-teal" />
+                <div className="inline-flex items-center justify-center p-3 bg-accent/20 rounded-full mb-6">
+                    <Heart className="w-8 h-8 text-primary" />
                 </div>
-                <h1 className="text-4xl md:text-5xl font-display font-bold mb-6 text-stormy-teal">Support Open Source Sadaqah Jariyah</h1>
+                <h1 className="text-4xl md:text-5xl font-display font-bold mb-6 text-text">Support Open Source Sadaqah Jariyah</h1>
 
-                <p className="text-xl text-teal mb-12 max-w-2xl mx-auto">
+                <p className="text-xl text-text/80 mb-12 max-w-2xl mx-auto">
                     KinKeep is built by the community, for the community. Your donations help us keep the app running, develop new features, and generate content for Muslims worldwide.
                 </p>
 
                 <div className="mb-16">
-                    <h3 className="text-lg font-bold text-stormy-teal mb-6">Choose an Amount</h3>
+                    <h3 className="text-lg font-bold text-text mb-6">Choose an Amount</h3>
                     <div className="flex flex-wrap justify-center gap-4">
                         {donationTiers.map((tier) => (
                             <a key={tier.amount} href={tier.link} target="_blank" rel="noopener noreferrer">
-                                <button className="w-24 h-16 rounded-xl border-2 border-stormy-teal/10 hover:border-tropical-teal bg-white/50 hover:bg-tropical-teal hover:text-white transition-all text-xl font-bold text-stormy-teal flex items-center justify-center">
+                                <button className="w-24 h-16 rounded-xl border-2 border-secondary hover:border-primary bg-white hover:bg-primary hover:text-white transition-all text-xl font-bold text-text flex items-center justify-center shadow-sm hover:shadow-md">
                                     {tier.label}
                                 </button>
                             </a>
@@ -40,31 +40,31 @@ export function Donate() {
                     </div>
                 </div>
 
-                <h2 className="text-3xl font-display font-bold mb-10 text-stormy-teal">Your Impact</h2>
+                <h2 className="text-3xl font-display font-bold mb-10 text-text">Your Impact</h2>
 
                 <div className="grid md:grid-cols-3 gap-6 text-left">
-                    <Card className="bg-white/50 backdrop-blur-sm border-stormy-teal/5">
-                        <div className="w-12 h-12 rounded-full bg-pearl-aqua/20 flex items-center justify-center text-tropical-teal mb-4">
+                    <Card className="bg-white shadow-md border-secondary/50">
+                        <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center text-primary mb-4">
                             <Server className="w-6 h-6" />
                         </div>
-                        <h3 className="font-bold text-lg text-stormy-teal mb-2">Server Costs</h3>
-                        <p className="text-teal text-sm">Keeping the app fast, reliable, and accessible to users.</p>
+                        <h3 className="font-bold text-lg text-text mb-2">Server Costs</h3>
+                        <p className="text-text/80 text-sm">Keeping the app fast, reliable, and accessible to users.</p>
                     </Card>
 
-                    <Card className="bg-white/50 backdrop-blur-sm border-stormy-teal/5">
-                        <div className="w-12 h-12 rounded-full bg-pearl-aqua/20 flex items-center justify-center text-tropical-teal mb-4">
+                    <Card className="bg-white shadow-md border-secondary/50">
+                        <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center text-primary mb-4">
                             <Users className="w-6 h-6" />
                         </div>
-                        <h3 className="font-bold text-lg text-stormy-teal mb-2">Community Features</h3>
-                        <p className="text-teal text-sm">Developing social features to connect Muslims.</p>
+                        <h3 className="font-bold text-lg text-text mb-2">Community Features</h3>
+                        <p className="text-text/80 text-sm">Developing social features to connect Muslims.</p>
                     </Card>
 
-                    <Card className="bg-white/50 backdrop-blur-sm border-stormy-teal/5">
-                        <div className="w-12 h-12 rounded-full bg-pearl-aqua/20 flex items-center justify-center text-tropical-teal mb-4">
+                    <Card className="bg-white shadow-md border-secondary/50">
+                        <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center text-primary mb-4">
                             <Code className="w-6 h-6" />
                         </div>
-                        <h3 className="font-bold text-lg text-stormy-teal mb-2">Developer Support</h3>
-                        <p className="text-teal text-sm">Allowing our team to dedicate more hours to coding, bug fixing, and support.</p>
+                        <h3 className="font-bold text-lg text-text mb-2">Developer Support</h3>
+                        <p className="text-text/80 text-sm">Allowing our team to dedicate more hours to coding, bug fixing, and support.</p>
                     </Card>
                 </div>
             </motion.div>

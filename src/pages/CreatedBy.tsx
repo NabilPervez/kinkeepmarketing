@@ -10,9 +10,9 @@ export function CreatedBy() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
             >
-                <h1 className="text-4xl md:text-5xl font-display font-bold mb-8 text-stormy-teal">Assalamu Alaikum, <br /><span className="text-tropical-teal">I'm Nabil Pervez</span></h1>
+                <h1 className="text-4xl md:text-5xl font-display font-bold mb-8 text-text">Assalamu Alaikum, <br /><span className="text-primary">I'm Nabil Pervez</span></h1>
 
-                <div className="prose prose-lg prose-headings:text-stormy-teal prose-p:text-teal mb-16">
+                <div className="prose prose-lg prose-headings:text-text prose-p:text-text/80 mb-16">
                     <p className="text-xl">
                         I am the former CTO and Co-Founder of AOE Creative, an award-winning, multi-million dollar agency.
                     </p>
@@ -27,9 +27,9 @@ export function CreatedBy() {
                     </p>
                 </div>
 
-                <div className="bg-white/50 backdrop-blur-sm border border-stormy-teal/10 rounded-3xl p-8 mb-16">
-                    <h3 className="text-2xl font-bold font-display mb-4 text-stormy-teal">How I Can Help You</h3>
-                    <p className="text-teal mb-8">
+                <div className="bg-white shadow-md border border-secondary/50 rounded-3xl p-8 mb-16">
+                    <h3 className="text-2xl font-bold font-display mb-4 text-text">How I Can Help You</h3>
+                    <p className="text-text/80 mb-8">
                         Let's Build Something Great Together. Whether you're an individual looking to level up your career, or a business ready to scale, I'm here to guide you through the process.
                     </p>
 

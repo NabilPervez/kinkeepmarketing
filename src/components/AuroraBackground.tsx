@@ -3,27 +3,27 @@ import { motion } from 'framer-motion';
 
 export const AuroraBackground: React.FC = () => {
     return (
-        <div className="fixed inset-0 z-[-1] overflow-hidden pointer-events-none">
-            {/* Removed dark overlay since we want the porcelain body background to show through, or use a light overlay */}
-            <div className="absolute inset-0 bg-porcelain/50 backdrop-blur-[100px] z-10"></div>
+        <div className="fixed inset-0 z-[-1] overflow-hidden pointer-events-none bg-background">
+            {/* Subtle overlay for matte feel */}
+            <div className="absolute inset-0 bg-white/40 backdrop-blur-[120px] z-10"></div>
 
-            {/* Steel Blue Blob - Top Left */}
+            {/* Slate Teal Blob - Top Left */}
             <motion.div
                 animate={{
                     x: [-20, 20, -20],
                     y: [-20, 20, -20],
                     scale: [1, 1.1, 1],
-                    opacity: [0.3, 0.4, 0.3],
+                    opacity: [0.1, 0.15, 0.1],
                 }}
                 transition={{
                     duration: 15,
                     repeat: Infinity,
                     ease: "easeInOut",
                 }}
-                className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-tropical-teal rounded-full blur-[120px] opacity-20 mix-blend-multiply"
+                className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-primary rounded-full blur-[100px]"
             />
 
-            {/* Frozen Water / Cyan Blob - Bottom Right */}
+            {/* Soft Mint Blob - Bottom Right */}
             <motion.div
                 animate={{
                     x: [20, -20, 20],
@@ -35,10 +35,10 @@ export const AuroraBackground: React.FC = () => {
                     repeat: Infinity,
                     ease: "easeInOut",
                 }}
-                className="absolute bottom-[-10%] right-[-10%] w-[600px] h-[600px] bg-pearl-aqua rounded-full blur-[140px] opacity-30 mix-blend-multiply"
+                className="absolute bottom-[-10%] right-[-10%] w-[600px] h-[600px] bg-accent rounded-full blur-[120px] opacity-20"
             />
 
-            {/* Soft Cyan Blob - Center/Right drifting */}
+            {/* Light Mist / Secondary Blob - Center/Right */}
             <motion.div
                 animate={{
                     x: [-50, 50, -50],
@@ -49,10 +49,10 @@ export const AuroraBackground: React.FC = () => {
                     repeat: Infinity,
                     ease: "easeInOut",
                 }}
-                className="absolute top-[20%] right-[10%] w-[400px] h-[400px] bg-tropical-teal rounded-full blur-[100px] opacity-20 mix-blend-multiply"
+                className="absolute top-[20%] right-[10%] w-[400px] h-[400px] bg-secondary rounded-full blur-[80px] opacity-40 mix-blend-multiply"
             />
 
-            {/* Primary/Red Accent - Center/Left drifting (Subtle warmth) */}
+            {/* Another accents Blob - Center/Left */}
             <motion.div
                 animate={{
                     x: [30, -30, 30],
@@ -63,7 +63,7 @@ export const AuroraBackground: React.FC = () => {
                     repeat: Infinity,
                     ease: "easeInOut",
                 }}
-                className="absolute bottom-[30%] left-[10%] w-[450px] h-[450px] bg-pearl-aqua/50 rounded-full blur-[110px] opacity-20 mix-blend-multiply"
+                className="absolute bottom-[30%] left-[10%] w-[450px] h-[450px] bg-accent/40 rounded-full blur-[90px] opacity-20 mix-blend-multiply"
             />
         </div>
     );

@@ -15,13 +15,11 @@ export const Card: React.FC<CardProps> = ({ children, className = '', delay = 0 
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay }}
             className={`
-        bg-white/60 
-        backdrop-blur-md 
-        border border-stormy-teal/5 
-        shadow-lg 
+        bg-white 
+        border border-secondary/50 
+        shadow-sm hover:shadow-md 
         rounded-3xl 
-        p-6 
-        hover:scale-[1.02] 
+        p-8 
         transition-all 
         duration-300 
         ${className}
