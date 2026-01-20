@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { Button } from '../components/Button';
 import { Card } from '../components/Card';
 import { Heart, Server, Users, Code } from 'lucide-react';
 

@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Button } from '../components/Button';
-import { ArrowRight, Twitter, Linkedin, Globe } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 export function CreatedBy() {
     return (
