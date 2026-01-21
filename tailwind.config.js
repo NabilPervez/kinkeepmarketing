@@ -11,65 +11,74 @@ export default {
                 display: ['Outfit', 'Inter', 'sans-serif'],
             },
             colors: {
-                // Primary Scale (Deep Sea Teal)
+                // Primary Scale (Aurora Core)
                 primary: {
-                    50: '#e8f3f2', // Mapped to 100 for safety, or slight lighten
-                    100: '#e8f3f2',
-                    200: '#cfe4e2',
-                    300: '#9fc8c4',
-                    400: '#579792',
-                    500: '#186663', // Base
-                    600: '#13524f',
-                    700: '#0e3e3c',
-                    800: '#092a29',
-                    900: '#051615',
-                    DEFAULT: '#186663',
+                    50: 'var(--color-primary-100)', // Mapping for safety
+                    100: 'var(--color-primary-100)',
+                    200: 'var(--color-primary-200)',
+                    300: 'var(--color-primary-300)',
+                    400: 'var(--color-primary-400)',
+                    500: 'var(--color-primary-500)', // Base
+                    600: 'var(--color-primary-600)',
+                    700: 'var(--color-primary-700)',
+                    800: 'var(--color-primary-800)',
+                    900: 'var(--color-primary-900)',
+                    DEFAULT: 'var(--color-primary-500)',
+                    // Semantic Aliases
+                    highlight: 'var(--color-highlight)', // Frost Mist
                 },
-                // Secondary Scale (Sun-Washed Sand)
+                // Secondary Scale (Glacial Mint)
                 secondary: {
-                    50: '#f7f1eb', // Using 100 value
-                    100: '#f7f1eb',
-                    500: '#d2af94', // Base
-                    900: '#4a3627',
-                    DEFAULT: '#d2af94',
+                    50: 'var(--color-secondary-100)',
+                    100: 'var(--color-secondary-100)',
+                    500: 'var(--color-secondary-500)', // Base
+                    900: 'var(--color-secondary-900)',
+                    DEFAULT: 'var(--color-secondary-500)',
                 },
-                // Neutral Scale (Slate Sage)
+                // Neutral Scale (Midnight Moss)
                 neutral: {
-                    50: '#f0f2f2', // Using 100 val
-                    100: '#f0f2f2',
-                    200: '#dadddd', // Interpolated
-                    300: '#c1c9c9', // Interpolated
-                    400: '#b3bdbd', // Interpolated
-                    500: '#a6b5b4', // Base
-                    600: '#859190',
-                    700: '#646d6c',
-                    800: '#424848',
-                    900: '#1d2625',
-                    DEFAULT: '#a6b5b4',
+                    50: 'var(--color-neutral-100)',
+                    100: 'var(--color-neutral-100)',
+                    500: 'var(--color-neutral-500)', // Base - Deep Forest
+                    900: 'var(--color-neutral-900)',
+                    DEFAULT: 'var(--color-neutral-500)',
+                    // Extra
+                    void: 'var(--color-void)',
                 },
-                // Interface Mappings
-                background: '#F0F2F2', // Neutral 100 / Interface Background
-                surface: '#FFFFFF',    // Interface Surface
-                text: '#002D37',       // Midnight Abyss / Interface Text
 
-                // Brand Mappings
-                accent: '#8C7361',     // Driftwood
-                'dark-slate': '#002D37', // Midnight Abyss (Legacy alias)
+                // Mappings
+                // "Accent/Light" => highlight => text_primary
+                highlight: 'var(--color-highlight)',
+
+                // Legacy / Compatibility Aliases
+                background: 'var(--color-neutral-500)', // Main bg is now dark (Deep Forest)
+                surface: 'var(--color-primary-900)',    // Darker surface (Aurora Core 900 or Neutral 900) - Using JSON 'surface' equivalent which was #001B17 (Primary 900)
+                text: 'var(--color-highlight)',         // Primary text is Frost Mist
+                'text-muted': 'var(--color-text-secondary)',
+
+                // "Accent" usage in codebase often implies the pop color. in "Aurora Forest" that's Glacial Mint (Secondary) or Frost Mist.
+                // Let's map 'accent' to Glacial Mint for buttons/highlights to keep "pop", or Frost Mist for text.
+                // Given previous usage was secondary-like, let's map to Secondary 500.
+                accent: 'var(--color-secondary-500)',
+                'dark-slate': 'var(--color-neutral-900)',
 
                 // Semantic Colors
-                success: '#346B5C',
-                warning: '#B58E4F',
-                danger: '#A34D41',
-                destructive: '#A34D41',
+                success: 'var(--color-success)',
+                warning: 'var(--color-warning)',
+                danger: 'var(--color-danger)',
+                destructive: 'var(--color-danger)',
             },
             boxShadow: {
-                // Midnight Abyss Shadow: rgba(0, 45, 55, 0.15)
-                sm: '0 1px 2px 0 rgba(0, 45, 55, 0.05)',
-                DEFAULT: '0 1px 3px 0 rgba(0, 45, 55, 0.15), 0 1px 2px -1px rgba(0, 45, 55, 0.1)',
-                md: '0 4px 6px -1px rgba(0, 45, 55, 0.15), 0 2px 4px -1px rgba(0, 45, 55, 0.1)',
-                lg: '0 10px 15px -3px rgba(0, 45, 55, 0.15), 0 4px 6px -4px rgba(0, 45, 55, 0.1)',
-                xl: '0 20px 25px -5px rgba(0, 45, 55, 0.15), 0 8px 10px -6px rgba(0, 45, 55, 0.1)',
-                '2xl': '0 25px 50px -12px rgba(0, 45, 55, 0.25)',
+                // Glow effects using Glacial Mint/Aurora colors
+                // "shadow-color" var isn't fully supported in tailwind utilities without define.
+                // Custom implementation of the requested glow: 0 0 20px rgba(72, 168, 154, 0.3)
+                glow: '0 0 20px rgba(72, 168, 154, 0.3)',
+                sm: '0 1px 2px 0 rgba(0, 0, 0, 0.3)',
+                DEFAULT: '0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 2px -1px rgba(0, 0, 0, 0.2)',
+                md: '0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.2)',
+                lg: '0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.2)',
+                xl: '0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.2)',
+                '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.5)',
             },
             keyframes: {
                 blob: {

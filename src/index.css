@@ -4,48 +4,54 @@
 
 @layer base {
   :root {
-    /* PRIMARY: Deep Sea Teal (#186663) */
-    --primary-100: #e8f3f2;
-    /* Lightened with a touch of yellow */
-    --primary-200: #cfe4e2;
-    --primary-300: #9fc8c4;
-    --primary-400: #579792;
-    --primary-500: #186663;
+    /* PRIMARY: Aurora Core (#00524D) */
+    /* Shifting toward yellow in lights, blue in darks */
+    --color-primary-100: #e0f2f0;
+    --color-primary-200: #b3dfdb;
+    --color-primary-300: #80cbc4;
+    --color-primary-400: #4db6ac;
+    --color-primary-500: #00524D;
     /* Base */
-    --primary-600: #13524f;
-    --primary-700: #0e3e3c;
-    --primary-800: #092a29;
-    --primary-900: #051615;
-    /* Darkened with a touch of deep blue */
+    --color-primary-600: #004d40;
+    --color-primary-700: #003d33;
+    --color-primary-800: #002d26;
+    --color-primary-900: #001b17;
 
-    /* SECONDARY: Sun-Washed Sand (#D2AF94) */
-    --secondary-100: #f7f1eb;
-    --secondary-500: #d2af94;
+    /* SECONDARY: Glacial Mint (#48A89A) */
+    --color-secondary-100: #f0f8f7;
+    --color-secondary-500: #48A89A;
     /* Base */
-    --secondary-900: #4a3627;
+    --color-secondary-900: #1a3d38;
 
-    /* NEUTRAL: Slate Sage (#A6B5B4) */
-    --neutral-100: #f0f2f2;
-    --neutral-500: #a6b5b4;
-    /* Base */
-    --neutral-900: #1d2625;
+    /* NEUTRAL: Midnight Moss (#053931) */
+    --color-neutral-100: #f1f4f4;
+    --color-neutral-500: #053931;
+    /* Base / Deep Forest */
+    --color-neutral-900: #021412;
 
-    /* EXTRA / ALIAS support */
-    /* Dark Neutral for Text/UI Elements */
-    --color-midnight: #002D37;
-    --color-driftwood: #8C7361;
+    /* EXTRA TOKENS FROM JSON / BREAKDOWN */
+    --color-highlight: #CBEFEB;
+    /* Frost Mist (Text Primary) */
+    --color-text-secondary: #A6B5B4;
+    --color-void: #000000;
+    /* Absolute Void */
 
-    /* SEMANTIC: Ocean-Inspired States */
-    --color-success: #346B5C;
-    /* Kelp Green */
-    --color-warning: #B58E4F;
-    /* Coastal Gold */
-    --color-danger: #A34D41;
-    /* Reef Coral */
+    /* SEMANTIC: Aurora-Harmonized */
+    --color-success: #2E7D32;
+    /* Deep Emerald */
+    --color-warning: #C5A059;
+    /* Muted Gold */
+    --color-danger: #944848;
+    /* Frosted Crimson */
+
+    /* UI CONSTANTS */
+    --shadow-color: 0 0 0;
+    /* RGB components for opacity mods */
   }
 
   body {
-    @apply bg-background text-text font-sans antialiased overflow-x-hidden;
+    /* Defaulting to dark mode base as described in "Neutral Base" */
+    @apply bg-neutral-500 text-highlight font-sans antialiased overflow-x-hidden;
     min-height: 100vh;
   }
 }
