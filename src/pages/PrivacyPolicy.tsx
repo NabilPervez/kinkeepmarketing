@@ -30,7 +30,10 @@ export function PrivacyPolicy() {
 
                     <h3>3. Analytics</h3>
                     <p>
-                        We do not run any tracking cookies, ad networks, or invasive analytics scripts. We respect your right to privacy completely.
+                        We use Google Analytics purely to monitor the performance of our marketing website and application. This helps us understand how many people are visiting, which pages are being viewed, and to identify any technical errors or bugs.
+                    </p>
+                    <p>
+                        This analytics data is aggregated and anonymous. It does not give us access to your personal contacts, notes, or any content you enter into KinKeep. We effectively measure the "container" (the app performance), never the "contents" (your relationships).
                     </p>
 
                     <h3>4. Contact</h3>
