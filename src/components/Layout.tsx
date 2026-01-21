@@ -33,7 +33,7 @@ export function Layout() {
 
                 {/* Section 8: Footer */}
                 <section className="text-center py-20 border-t border-secondary relative z-10 mt-32">
-                    <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 text-primary">Be the friend who remembers.</h2>
+                    <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 text-white">Be the friend who remembers.</h2>
                     <p className="text-text/70 mb-10 text-xl">Build better habits and strengthen your community today.</p>
                     <a href="https://kinkeep.netlify.app/" target="_blank" rel="noopener noreferrer">
                         <Button className="mx-auto text-lg px-12 py-5 shadow-lg hover:shadow-xl bg-accent text-dark-slate hover:bg-accent/90">
@@ -43,14 +43,14 @@ export function Layout() {
 
                     <div className="max-w-7xl mx-auto mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 text-left text-sm">
                         <div>
-                            <h4 className="font-bold mb-4 text-primary">Quick Links</h4>
+                            <h4 className="font-bold mb-4 text-white">Quick Links</h4>
                             <div className="flex flex-col gap-2">
                                 <Link to="/" className="text-text/60 hover:text-primary transition-colors">Home</Link>
                                 <Link to="/created-by" className="text-text/60 hover:text-primary transition-colors">Created By</Link>
                             </div>
                         </div>
                         <div>
-                            <h4 className="font-bold mb-4 text-primary">Legal</h4>
+                            <h4 className="font-bold mb-4 text-white">Legal</h4>
                             <div className="flex flex-col gap-2">
                                 <span className="text-text/40 cursor-not-allowed">Privacy Policy</span>
                                 <span className="text-text/40 cursor-not-allowed">Terms of Service</span>

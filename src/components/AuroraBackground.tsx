@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 export const AuroraBackground: React.FC = () => {
     return (
         <div className="fixed inset-0 z-[-1] overflow-hidden pointer-events-none bg-background">
-            {/* Subtle overlay for matte feel */}
-            <div className="absolute inset-0 bg-white/40 backdrop-blur-[120px] z-10"></div>
+            {/* Subtle overlay for matte feel - Darkened for contrast */}
+            <div className="absolute inset-0 bg-neutral-900/40 backdrop-blur-[100px] z-10"></div>
 
             {/* Slate Teal Blob - Top Left */}
             <motion.div

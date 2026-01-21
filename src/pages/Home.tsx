@@ -26,7 +26,7 @@ export function Home() {
                         Private Beta Now Open
                     </div>
                     <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-black tracking-tight mb-8 text-text">
-                        When was the last time you thought, <span className="text-primary">"I really need to call them,"</span> but never did?
+                        When was the last time you thought, <span className="text-secondary">"I really need to call them,"</span> but never did?
                     </h1>
                     <p className="text-xl text-text/80 mb-10 max-w-2xl mx-auto leading-relaxed">
                         Stop letting meaningful connections slip through the cracks. KinKeep is the privacy-focused Personal Relationship Manager that turns your static address book into an active maintenance plan.
@@ -50,16 +50,16 @@ export function Home() {
                             <Database className="w-6 h-6" />
                             <h3 className="text-lg font-bold font-display tracking-tight">The Graveyard</h3>
                         </div>
-                        <p className="text-2xl font-bold font-display mb-4 text-text/70">Your phone contacts are a graveyard.</p>
-                        <p className="text-text/80 leading-relaxed">Standard address books are just lists of names and numbers waiting to be forgotten. Static, cold, and dead.</p>
+                        <p className="text-2xl font-bold font-display mb-4 text-neutral-600">Your phone contacts are a graveyard.</p>
+                        <p className="text-neutral-600/80 leading-relaxed">Standard address books are just lists of names and numbers waiting to be forgotten. Static, cold, and dead.</p>
                     </Card>
                     <Card delay={0.2} className="h-full bg-gradient-to-br from-accent/10 to-transparent border-primary/20 shadow-sm hover:shadow-md">
                         <div className="flex items-center gap-4 mb-4 text-text">
                             <Sparkles className="w-6 h-6 text-primary" />
                             <h3 className="text-lg font-bold font-display tracking-tight">The Garden</h3>
                         </div>
-                        <p className="text-2xl font-bold font-display mb-4 text-text">KinKeep is a garden.</p>
-                        <p className="text-text/80 leading-relaxed">Relationships need maintenance. Whether it’s calling your parents every Sunday, texting a college friend once a month, or networking with a mentor quarterly, KinKeep handles the "when" so you can focus on the "who."</p>
+                        <p className="text-2xl font-bold font-display mb-4 text-neutral-900">KinKeep is a garden.</p>
+                        <p className="text-neutral-700 leading-relaxed">Relationships need maintenance. Whether it’s calling your parents every Sunday, texting a college friend once a month, or networking with a mentor quarterly, KinKeep handles the "when" so you can focus on the "who."</p>
                     </Card>
                 </div>
             </section>
@@ -68,7 +68,7 @@ export function Home() {
             <section className="max-w-6xl mx-auto mb-32">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl font-bold mb-4 text-text">Wake up to a plan, not a chaotic inbox.</h2>
-                    <p className="text-text/80 text-lg">The KinKeep Dashboard answers one specific question: <strong className="text-primary">Who do I need to connect with today?</strong></p>
+                    <p className="text-text/80 text-lg">The KinKeep Dashboard answers one specific question: <strong className="text-secondary">Who do I need to connect with today?</strong></p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:grid-rows-3 gap-6 h-auto lg:h-[600px]">
@@ -77,7 +77,7 @@ export function Home() {
                         <div className="absolute top-0 right-0 p-4 opacity-70"><span className="text-[10px] font-bold uppercase tracking-widest text-[#ef4444] bg-[#ef4444]/10 px-2 py-1 rounded-full">High Priority</span></div>
                         <div className="mt-4">
                             <div className="w-20 h-20 rounded-full bg-secondary flex items-center justify-center mb-6 text-4xl border-2 border-white shadow-sm">👩‍👧</div>
-                            <h3 className="text-3xl font-display font-bold text-text mb-2">Call Mom</h3>
+                            <h3 className="text-3xl font-display font-bold text-neutral-900 mb-2">Call Mom</h3>
                             <p className="text-[#ef4444] text-sm font-bold mb-8 flex items-center gap-2">
                                 <span className="w-2 h-2 rounded-full bg-[#ef4444] animate-pulse"></span>
                                 Overdue by 2 days
@@ -92,7 +92,7 @@ export function Home() {
                             </div>
                         </div>
                         <div className="mt-8 border-t border-secondary pt-4">
-                            <p className="text-text/60 text-xs uppercase tracking-wide font-medium">Last connected: 2 weeks ago</p>
+                            <p className="text-neutral-500 text-xs uppercase tracking-wide font-medium">Last connected: 2 weeks ago</p>
                         </div>
                     </Card>
 
@@ -106,23 +106,23 @@ export function Home() {
                     <Card className="col-span-1 md:col-span-1 flex flex-col justify-center gap-3 bg-white shadow-sm hover:shadow-md border-secondary/50">
                         <div className="flex items-center gap-3">
                             <div className="w-2 h-2 rounded-full bg-emerald-500 shadow-none" />
-                            <span className="text-sm font-medium text-text">Upcoming Birthdays</span>
+                            <span className="text-sm font-medium text-neutral-700">Upcoming Birthdays</span>
                         </div>
                         <div className="flex items-center gap-3">
                             <div className="w-2 h-2 rounded-full bg-[#ef4444] shadow-none" />
-                            <span className="text-sm font-medium text-text">Overdue Check-ins</span>
+                            <span className="text-sm font-medium text-neutral-700">Overdue Check-ins</span>
                         </div>
                         <div className="flex items-center gap-3">
                             <div className="w-2 h-2 rounded-full bg-primary" />
-                            <span className="text-sm font-medium text-text">Work Network</span>
+                            <span className="text-sm font-medium text-neutral-700">Work Network</span>
                         </div>
                     </Card>
 
                     {/* Feature 4: Upcoming Schedule (Bottom Wide Block) */}
                     <Card className="col-span-1 md:col-span-2 lg:col-span-4 bg-white shadow-sm hover:shadow-md border-secondary/50">
                         <div className="flex items-center justify-between mb-4">
-                            <h3 className="text-lg font-bold text-text font-display">Upcoming Schedule</h3>
-                            <span className="text-xs text-text/60">Next 7 Days</span>
+                            <h3 className="text-lg font-bold text-neutral-900 font-display">Upcoming Schedule</h3>
+                            <span className="text-xs text-neutral-500">Next 7 Days</span>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                             {[
@@ -130,11 +130,11 @@ export function Home() {
                                 { name: 'Imam (Community)', day: 'Friday', icon: 'I', color: 'bg-emerald-500' },
                                 { name: 'Boss (Work)', day: 'Monday', icon: 'B', color: 'bg-purple-500' },
                             ].map((item, i) => (
-                                <div key={i} className="bg-secondary/30 rounded-2xl p-4 flex items-center gap-4 border border-secondary/50 hover:bg-secondary/50 transition-colors cursor-pointer group">
-                                    <div className={`w-10 h-10 rounded-full ${item.color}/20 flex items-center justify-center text-text font-bold group-hover:scale-105 transition-transform`}>{item.icon}</div>
+                                <div key={i} className="bg-secondary/10 rounded-2xl p-4 flex items-center gap-4 border border-secondary/50 hover:bg-secondary/20 transition-colors cursor-pointer group">
+                                    <div className={`w-10 h-10 rounded-full ${item.color}/20 flex items-center justify-center text-neutral-900 font-bold group-hover:scale-105 transition-transform`}>{item.icon}</div>
                                     <div>
-                                        <div className="font-bold text-text text-sm">{item.name}</div>
-                                        <div className="text-xs text-text/60">{item.day}</div>
+                                        <div className="font-bold text-neutral-900 text-sm">{item.name}</div>
+                                        <div className="text-xs text-neutral-600">{item.day}</div>
                                     </div>
                                 </div>
                             ))}
@@ -147,7 +147,7 @@ export function Home() {
             <section className="max-w-5xl mx-auto mb-32">
                 <div className="flex flex-col md:flex-row gap-16 items-center">
                     <div className="flex-1">
-                        <h2 className="text-3xl md:text-5xl font-display font-bold mb-6 text-text">Set your rhythm. <br /><span className="text-primary">We’ll keep the beat.</span></h2>
+                        <h2 className="text-3xl md:text-5xl font-display font-bold mb-6 text-text">Set your rhythm. <br /><span className="text-secondary">We’ll keep the beat.</span></h2>
                         <p className="text-text/80 text-lg mb-8">
                             Relationships isn't one-size-fits-all. KinKeep gives you granular control over the cadence of every connection in your life.
                         </p>
@@ -203,18 +203,18 @@ export function Home() {
             <section className="max-w-4xl mx-auto mb-32 text-center">
                 <Card className="bg-white border-secondary/50 relative overflow-hidden shadow-md">
                     <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent pointer-events-none"></div>
-                    <h2 className="text-2xl md:text-3xl font-display font-bold mb-4 px-2 text-text">Organize your entire network in minutes, not hours.</h2>
-                    <p className="text-text/80 mb-8 max-w-2xl mx-auto relative z-10">
+                    <h2 className="text-2xl md:text-3xl font-display font-bold mb-4 px-2 text-neutral-900">Organize your entire network in minutes, not hours.</h2>
+                    <p className="text-neutral-700 mb-8 max-w-2xl mx-auto relative z-10">
                         Dreading the setup? Don't. Our <strong>Import Wizard</strong> ingests your existing CSV or VCF files and helps you rapidly assign frequencies to bulk groups. Turn a list of 500 undefined contacts into a prioritized maintenance schedule in just a few clicks.
                     </p>
                     <div className="flex justify-center relative z-10">
                         <div className="relative group cursor-pointer">
                             <div className="absolute -inset-1 bg-gradient-to-r from-[#ef4444] to-primary rounded-xl blur opacity-25 group-hover:opacity-75 transition duration-200"></div>
                             <div className="relative bg-white rounded-xl p-4 flex items-center gap-4 border border-secondary/50 shadow-sm">
-                                <div className="bg-secondary p-2 rounded-lg"><Download className="w-6 h-6 text-text" /></div>
+                                <div className="bg-secondary p-2 rounded-lg"><Download className="w-6 h-6 text-white" /></div>
                                 <div className="text-left">
-                                    <div className="text-sm font-medium text-text">Import Contacts.csv</div>
-                                    <div className="text-xs text-text/60">Drag and drop or click to upload</div>
+                                    <div className="text-sm font-medium text-neutral-900">Import Contacts.csv</div>
+                                    <div className="text-xs text-neutral-500">Drag and drop or click to upload</div>
                                 </div>
                             </div>
                         </div>
@@ -229,10 +229,10 @@ export function Home() {
                         <Card className="relative overflow-hidden bg-white shadow-md border-secondary/50">
                             <div className="bg-white rounded-xl p-4 mb-4 border border-secondary shadow-inner">
                                 <div className="flex justify-between items-center mb-2">
-                                    <span className="text-xs font-mono text-text/60">Template: Birthday</span>
+                                    <span className="text-xs font-mono text-neutral-500">Template: Birthday</span>
                                     <span className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded">Active</span>
                                 </div>
-                                <p className="text-text text-sm leading-relaxed">
+                                <p className="text-neutral-900 text-sm leading-relaxed">
                                     "Happy Birthday <span className="text-primary bg-primary/10 px-1 rounded">{'{NAME}'}</span>! Hope you have a fantastic day filled with joy."
                                 </p>
                             </div>
