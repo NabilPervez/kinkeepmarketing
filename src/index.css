@@ -3,8 +3,53 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    /* PRIMARY: Deep Sea Teal (#2C5D66) */
+    --color-primary-50: #eef6f7;
+    --color-primary-100: #d7e9ec;
+    --color-primary-200: #afd3d8;
+    --color-primary-300: #81b7bf;
+    --color-primary-400: #5597a1;
+    --color-primary-500: #2c5d66;
+    /* Base */
+    --color-primary-600: #234e57;
+    --color-primary-700: #1a3d45;
+    --color-primary-800: #112b32;
+    --color-primary-900: #081a1f;
+
+    /* SECONDARY: Misty Slate (#6F99A5) */
+    --color-secondary-50: #f4f8f9;
+    --color-secondary-500: #6f99a5;
+    /* Base */
+    --color-secondary-900: #1a2a2e;
+
+    /* NEUTRAL: Midnight Moss (#0B3238) */
+    --color-neutral-50: #f8fafb;
+    --color-neutral-100: #f1f4f5;
+    --color-neutral-200: #e2e8ea;
+    --color-neutral-500: #0b3238;
+    /* Base */
+    --color-neutral-900: #041416;
+
+    /* SEMANTIC: Forest-Themed Adaptations */
+    --color-success: #3E664B;
+    /* Deep Forest Green */
+    --color-warning: #A68D5D;
+    /* Muted Gold/Earth */
+    --color-danger: #7D3C3C;
+    /* Dried Clay Red */
+
+    /* EXTRA TOKENS */
+    --color-primary-light: #CDE2EB;
+    /* Arctic Air */
+
+    /* ACCESSIBILITY HELPER */
+    --text-on-primary: #ffffff;
+    --text-on-secondary: #041416;
+  }
+
   body {
-    @apply bg-background text-text font-sans antialiased overflow-x-hidden;
+    @apply bg-neutral-surface text-neutral-text font-sans antialiased overflow-x-hidden;
     min-height: 100vh;
   }
 }
