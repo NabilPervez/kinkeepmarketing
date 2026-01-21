@@ -22,7 +22,7 @@ export function Home() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    <div className="inline-block mb-6 px-4 py-1.5 rounded-full bg-accent/20 border border-primary/20 text-primary text-sm font-medium">
+                    <div className="inline-block mb-6 px-4 py-1.5 rounded-full bg-accent/20 border border-secondary/20 text-secondary text-sm font-medium">
                         Private Beta Now Open
                     </div>
                     <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-black tracking-tight mb-8 text-text">
@@ -175,20 +175,20 @@ export function Home() {
                         {/* Visualizing Cadence Settings */}
                         <Card className="max-w-sm ml-auto bg-white shadow-lg border-secondary/50">
                             <div className="mb-6 border-b border-secondary pb-4">
-                                <h4 className="font-medium text-sm text-text/60 mb-2">Frequency</h4>
+                                <h4 className="font-medium text-sm text-neutral-500 mb-2">Frequency</h4>
                                 <div className="flex gap-2 flex-wrap">
                                     {['Daily', 'Weekly', 'Monthly', 'Yearly'].map(opt => (
-                                        <span key={opt} className={`px-3 py-1 rounded-full text-sm border ${opt === 'Weekly' ? 'bg-primary border-primary text-white' : 'border-secondary text-text/70'}`}>
+                                        <span key={opt} className={`px-3 py-1 rounded-full text-sm border ${opt === 'Weekly' ? 'bg-primary border-primary text-white' : 'border-secondary text-neutral-700'}`}>
                                             {opt}
                                         </span>
                                     ))}
                                 </div>
                             </div>
                             <div>
-                                <h4 className="font-medium text-sm text-text/60 mb-2">Preferred Day</h4>
+                                <h4 className="font-medium text-sm text-neutral-500 mb-2">Preferred Day</h4>
                                 <div className="grid grid-cols-4 gap-2">
                                     {['S', 'M', 'T', 'W', 'T', 'F', 'S'].map((d, i) => (
-                                        <div key={i} className={`h-10 rounded-lg flex items-center justify-center text-xs ${i === 0 ? 'bg-primary/20 text-primary border border-primary/30' : 'bg-secondary/40 text-text/70 border border-secondary'}`}>
+                                        <div key={i} className={`h-10 rounded-lg flex items-center justify-center text-xs ${i === 0 ? 'bg-primary/20 text-primary border border-primary/30' : 'bg-secondary/20 text-neutral-700 border border-secondary/50'}`}>
                                             {d}
                                         </div>
                                     ))}
