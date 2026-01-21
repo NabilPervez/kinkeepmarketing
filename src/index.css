@@ -4,52 +4,48 @@
 
 @layer base {
   :root {
-    /* PRIMARY: Deep Sea Teal (#2C5D66) */
-    --color-primary-50: #eef6f7;
-    --color-primary-100: #d7e9ec;
-    --color-primary-200: #afd3d8;
-    --color-primary-300: #81b7bf;
-    --color-primary-400: #5597a1;
-    --color-primary-500: #2c5d66;
+    /* PRIMARY: Deep Sea Teal (#186663) */
+    --primary-100: #e8f3f2;
+    /* Lightened with a touch of yellow */
+    --primary-200: #cfe4e2;
+    --primary-300: #9fc8c4;
+    --primary-400: #579792;
+    --primary-500: #186663;
     /* Base */
-    --color-primary-600: #234e57;
-    --color-primary-700: #1a3d45;
-    --color-primary-800: #112b32;
-    --color-primary-900: #081a1f;
+    --primary-600: #13524f;
+    --primary-700: #0e3e3c;
+    --primary-800: #092a29;
+    --primary-900: #051615;
+    /* Darkened with a touch of deep blue */
 
-    /* SECONDARY: Misty Slate (#6F99A5) */
-    --color-secondary-50: #f4f8f9;
-    --color-secondary-500: #6f99a5;
+    /* SECONDARY: Sun-Washed Sand (#D2AF94) */
+    --secondary-100: #f7f1eb;
+    --secondary-500: #d2af94;
     /* Base */
-    --color-secondary-900: #1a2a2e;
+    --secondary-900: #4a3627;
 
-    /* NEUTRAL: Midnight Moss (#0B3238) */
-    --color-neutral-50: #f8fafb;
-    --color-neutral-100: #f1f4f5;
-    --color-neutral-200: #e2e8ea;
-    --color-neutral-500: #0b3238;
+    /* NEUTRAL: Slate Sage (#A6B5B4) */
+    --neutral-100: #f0f2f2;
+    --neutral-500: #a6b5b4;
     /* Base */
-    --color-neutral-900: #041416;
+    --neutral-900: #1d2625;
 
-    /* SEMANTIC: Forest-Themed Adaptations */
-    --color-success: #3E664B;
-    /* Deep Forest Green */
-    --color-warning: #A68D5D;
-    /* Muted Gold/Earth */
-    --color-danger: #7D3C3C;
-    /* Dried Clay Red */
+    /* EXTRA / ALIAS support */
+    /* Dark Neutral for Text/UI Elements */
+    --color-midnight: #002D37;
+    --color-driftwood: #8C7361;
 
-    /* EXTRA TOKENS */
-    --color-primary-light: #CDE2EB;
-    /* Arctic Air */
-
-    /* ACCESSIBILITY HELPER */
-    --text-on-primary: #ffffff;
-    --text-on-secondary: #041416;
+    /* SEMANTIC: Ocean-Inspired States */
+    --color-success: #346B5C;
+    /* Kelp Green */
+    --color-warning: #B58E4F;
+    /* Coastal Gold */
+    --color-danger: #A34D41;
+    /* Reef Coral */
   }
 
   body {
-    @apply bg-neutral-surface text-neutral-text font-sans antialiased overflow-x-hidden;
+    @apply bg-background text-text font-sans antialiased overflow-x-hidden;
     min-height: 100vh;
   }
 }

@@ -13,60 +13,63 @@ export default {
             colors: {
                 // Primary Scale (Deep Sea Teal)
                 primary: {
-                    50: '#eef6f7',
-                    100: '#d7e9ec',
-                    200: '#afd3d8',
-                    300: '#81b7bf',
-                    400: '#5597a1',
-                    500: '#2c5d66', // Base
-                    600: '#234e57',
-                    700: '#1a3d45',
-                    800: '#112b32',
-                    900: '#081a1f',
-                    // Semantic Aliases
-                    light: '#CDE2EB', // Arctic Air / Accent
-                    DEFAULT: '#2c5d66',
+                    50: '#e8f3f2', // Mapped to 100 for safety, or slight lighten
+                    100: '#e8f3f2',
+                    200: '#cfe4e2',
+                    300: '#9fc8c4',
+                    400: '#579792',
+                    500: '#186663', // Base
+                    600: '#13524f',
+                    700: '#0e3e3c',
+                    800: '#092a29',
+                    900: '#051615',
+                    DEFAULT: '#186663',
                 },
-                // Secondary Scale (Misty Slate)
+                // Secondary Scale (Sun-Washed Sand)
                 secondary: {
-                    50: '#f4f8f9',
-                    500: '#6f99a5', // Base
-                    900: '#1a2a2e',
-                    DEFAULT: '#6f99a5',
+                    50: '#f7f1eb', // Using 100 value
+                    100: '#f7f1eb',
+                    500: '#d2af94', // Base
+                    900: '#4a3627',
+                    DEFAULT: '#d2af94',
                 },
-                // Neutral Scale (Midnight Moss)
+                // Neutral Scale (Slate Sage)
                 neutral: {
-                    50: '#f8fafb',
-                    100: '#f1f4f5',
-                    200: '#e2e8ea',
-                    500: '#0b3238', // Base
-                    900: '#041416',
-                    // Semantic Aliases
-                    surface: '#f8fafb',
-                    border: '#e2e8ea',
-                    text: '#041416',
-                    DEFAULT: '#0b3238',
+                    50: '#f0f2f2', // Using 100 val
+                    100: '#f0f2f2',
+                    200: '#dadddd', // Interpolated
+                    300: '#c1c9c9', // Interpolated
+                    400: '#b3bdbd', // Interpolated
+                    500: '#a6b5b4', // Base
+                    600: '#859190',
+                    700: '#646d6c',
+                    800: '#424848',
+                    900: '#1d2625',
+                    DEFAULT: '#a6b5b4',
                 },
-                // Legacy / Compatibility Aliases
-                background: '#f8fafb', // neutral-50
-                text: '#041416',       // neutral-900
-                accent: '#CDE2EB',     // primary-light / Arctic Air
-                'dark-slate': '#041416', // neutral-900
+                // Interface Mappings
+                background: '#F0F2F2', // Neutral 100 / Interface Background
+                surface: '#FFFFFF',    // Interface Surface
+                text: '#002D37',       // Midnight Abyss / Interface Text
+
+                // Brand Mappings
+                accent: '#8C7361',     // Driftwood
+                'dark-slate': '#002D37', // Midnight Abyss (Legacy alias)
 
                 // Semantic Colors
-                success: '#3E664B',
-                warning: '#A68D5D',
-                danger: '#7D3C3C',
-                destructive: '#7D3C3C',
+                success: '#346B5C',
+                warning: '#B58E4F',
+                danger: '#A34D41',
+                destructive: '#A34D41',
             },
             boxShadow: {
-                // Custom shadows using the deep neutral color rgba(4, 20, 22, 0.3)
-                sm: '0 1px 2px 0 rgba(4, 20, 22, 0.05)',
-                DEFAULT: '0 1px 3px 0 rgba(4, 20, 22, 0.2), 0 1px 2px -1px rgba(4, 20, 22, 0.1)',
-                md: '0 4px 6px -1px rgba(4, 20, 22, 0.3), 0 2px 4px -1px rgba(4, 20, 22, 0.15)',
-                lg: '0 10px 15px -3px rgba(4, 20, 22, 0.3), 0 4px 6px -4px rgba(4, 20, 22, 0.15)',
-                xl: '0 20px 25px -5px rgba(4, 20, 22, 0.3), 0 8px 10px -6px rgba(4, 20, 22, 0.15)',
-                '2xl': '0 25px 50px -12px rgba(4, 20, 22, 0.5)',
+                // Midnight Abyss Shadow: rgba(0, 45, 55, 0.15)
+                sm: '0 1px 2px 0 rgba(0, 45, 55, 0.05)',
+                DEFAULT: '0 1px 3px 0 rgba(0, 45, 55, 0.15), 0 1px 2px -1px rgba(0, 45, 55, 0.1)',
+                md: '0 4px 6px -1px rgba(0, 45, 55, 0.15), 0 2px 4px -1px rgba(0, 45, 55, 0.1)',
+                lg: '0 10px 15px -3px rgba(0, 45, 55, 0.15), 0 4px 6px -4px rgba(0, 45, 55, 0.1)',
+                xl: '0 20px 25px -5px rgba(0, 45, 55, 0.15), 0 8px 10px -6px rgba(0, 45, 55, 0.1)',
+                '2xl': '0 25px 50px -12px rgba(0, 45, 55, 0.25)',
             },
             keyframes: {
                 blob: {
