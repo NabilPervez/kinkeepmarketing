@@ -52,8 +52,8 @@ export function Layout() {
                         <div>
                             <h4 className="font-bold mb-4 text-white">Legal</h4>
                             <div className="flex flex-col gap-2">
-                                <span className="text-text/40 cursor-not-allowed">Privacy Policy</span>
-                                <span className="text-text/40 cursor-not-allowed">Terms of Service</span>
+                                <Link to="/privacy-policy" className="text-text/40 hover:text-text transition-colors">Privacy Policy</Link>
+                                <Link to="/terms-of-service" className="text-text/40 hover:text-text transition-colors">Terms of Service</Link>
                             </div>
                         </div>
                     </div>
