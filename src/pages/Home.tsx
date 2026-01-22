@@ -22,8 +22,8 @@ export function Home() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    <div className="inline-block mb-6 px-4 py-1.5 rounded-full bg-accent/20 border border-secondary/20 text-secondary text-sm font-medium">
-                        Private Beta Now Open
+                    <div className="inline-block mb-8 px-6 py-2 rounded-full bg-gradient-to-r from-secondary/20 via-primary/10 to-secondary/20 border border-secondary/50 text-secondary-dark text-sm font-semibold shadow-[0_0_20px_rgba(56,189,248,0.3)] backdrop-blur-sm animate-[pulse_3s_ease-in-out_infinite]">
+                        ✨ Private Beta Now Open
                     </div>
                     <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-black tracking-tight mb-8 text-text">
                         When was the last time you thought, <span className="text-secondary">"I really need to call them,"</span> but never did?
@@ -33,8 +33,8 @@ export function Home() {
                     </p>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                         <a href="https://kinkeep.netlify.app/" target="_blank" rel="noopener noreferrer">
-                            <Button className="w-full sm:w-auto text-lg px-8 py-4 shadow-lg hover:shadow-xl bg-accent text-dark-slate hover:bg-accent/90">
-                                Start Keeping in Touch — Free <ArrowRight className="w-5 h-5" />
+                            <Button className="w-full sm:w-auto text-xl px-10 py-5 shadow-[0_4px_14px_0_rgba(56,189,248,0.39)] hover:shadow-[0_6px_20px_rgba(56,189,248,0.23)] hover:-translate-y-1 transition-all duration-300 bg-gradient-to-r from-accent to-secondary text-dark-slate font-bold border border-white/20">
+                                Start Keeping in Touch — Free <ArrowRight className="w-6 h-6 ml-2" />
                             </Button>
                         </a>
                     </div>
@@ -99,7 +99,7 @@ export function Home() {
                     {/* Feature 2: Stats (Top Right Small Block) */}
                     <Card className="col-span-1 md:col-span-1 flex flex-col justify-center items-center text-center bg-accent/10 border-primary/20 shadow-sm hover:shadow-md">
                         <div className="text-5xl font-display font-bold text-primary mb-2">5</div>
-                        <p className="text-[10px] text-primary/80 font-bold uppercase tracking-widest">Connections this week</p>
+                        <p className="text-[10px] text-neutral-900 font-bold uppercase tracking-widest">Connections this week</p>
                     </Card>
 
                     {/* Feature 3: Smart Lists (Top Right Wide Block) */}
